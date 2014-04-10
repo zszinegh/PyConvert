@@ -1,8 +1,17 @@
-"""A module to do various unit conversions."""
+"""A module to do various unit conversions.
+
+This module's functions convert various units of measurement.
+
+All functions expect a 'float' as an argument and return a 'float'.
+
+'validate_input()' can be used before running any function to
+convert the input to a 'float'.
+
+"""
 
 
 def validate_input(incoming):
-    """Converts input to float if it can.
+    """Convert input to float.
 
     Args:
         incoming (str): String probably coming from a 'raw_input()'.
@@ -18,6 +27,7 @@ def validate_input(incoming):
     return result
 
 
+# Conversion functions.
 def celsius_fahrenheit(number):
     """Convert celsius to fahrenheit."""
     return (number * 9.0 / 5.0) + 32.0
@@ -36,6 +46,7 @@ def kms_miles(number):
 def miles_kms(number):
     """Convert miles to kms."""
     return number / 0.62137
+
 
 if __name__ == '__main__':
     pass
